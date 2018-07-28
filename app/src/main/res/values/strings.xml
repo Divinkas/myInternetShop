@@ -1,3 +1,21 @@
 <resources>
+    <string name="not_pass">Забыли пароль?</string>
     <string name="app_name">Интеренет магазин</string>
+    <string name="autorize">Вход</string>
+    <string name="autentification">Регистрация</string>
+    <string name="login">Логин</string>
+    <string name="password">Пароль</string>
+    <string name="showPassword">Показать пароль</string>
+    <string name="socTvText">Войти через соц. сеть</string>
+    <string name="facebook">Facebook</string>
+
+
+    <string name="title_main_menu_search">Поиск</string>
+    <string name="title_main_menu_basket">Корзина</string>
+
+    <string name="title_login">Вход</string>
+    <string name="title_registration">Регистрация</string>
+    <string name="title_tovars">Каталог товаров</string>
+    <string name="title_filtr">Категория</string>
+    <string name="title_tovar">Товар</string>
 </resources>
