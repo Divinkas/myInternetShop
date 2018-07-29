@@ -18,4 +18,13 @@
     <string name="title_tovars">Каталог товаров</string>
     <string name="title_filtr">Категория</string>
     <string name="title_tovar">Товар</string>
+
+    <string name="nv_catalog">Каталог товаров</string>
+    <string name="nv_bask">Корзина</string>
+    <string name="nv_myLike">Избранное</string>
+    <string name="nv_mySell">Мои заказы</string>
+    <string name="nv_info">Информация</string>
+    <string name="nv_languages">Языки</string>
+
+    <string name="logo_info">logo</string>
 </resources>

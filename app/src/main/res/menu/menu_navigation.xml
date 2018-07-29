@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:title="@string/nv_catalog"
+        android:id="@+id/catalog"
+        android:icon="@drawable/home"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:title="@string/nv_bask"
+        android:id="@+id/bask"
+        android:icon="@drawable/basket" />
+    <item
+        android:title="@string/nv_myLike"
+        android:id="@+id/my_like"
+        android:icon="@drawable/star_outline" />
+    <item
+        android:title="@string/nv_mySell"
+        android:id="@+id/mySell"
+        android:icon="@drawable/comment_text_multiple" />
+    <item
+        android:title="@string/nv_info"
+        android:id="@+id/nvInfo"
+        android:icon="@drawable/info" />
+    <item
+        android:title="@string/nv_languages"
+        android:id="@+id/langouages"
+        android:icon="@drawable/settings" />
+</menu>
