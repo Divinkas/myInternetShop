@@ -10,4 +10,5 @@
     <color name="colorDarkGray_">#515151</color>
     <color name="colorBlu_">#303F9F</color>
     <color name="colorBlack_">#0d0d0d</color>
+    <color name="colorRed_">#ff1e1e</color>
 </resources>

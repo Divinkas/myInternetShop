@@ -27,4 +27,8 @@
     <string name="nv_languages">Языки</string>
 
     <string name="logo_info">logo</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="tov_catalog">Каталог товаров</string>
+    <string name="img_tov">Изображение товара</string>
 </resources>

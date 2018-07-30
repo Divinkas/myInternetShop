@@ -9,11 +9,13 @@
     <item
         android:title="@string/nv_bask"
         android:id="@+id/bask"
-        android:icon="@drawable/basket" />
+        android:icon="@drawable/basket"
+        app:actionViewClass="android.widget.TextView" />
     <item
         android:title="@string/nv_myLike"
         android:id="@+id/my_like"
-        android:icon="@drawable/star_outline" />
+        android:icon="@drawable/star_outline"
+        app:actionViewClass="android.widget.TextView"/>
     <item
         android:title="@string/nv_mySell"
         android:id="@+id/mySell"

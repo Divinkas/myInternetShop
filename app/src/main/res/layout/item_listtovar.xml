@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/tovarItemContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorGray_">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/imgvTovar"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:contentDescription="@string/img_tov"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="3"
+                android:src="@drawable/icon_tov"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tvTovarName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/img_tov"
+                    android:textColor="@color/colorDarkGray_" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="bottom"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:id="@+id/addInMyLike"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginEnd="10dp"
+                            android:src="@drawable/star_outline"
+                            android:contentDescription="@string/nv_myLike" />
+                        <ImageView
+                            android:id="@+id/addInBask"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginEnd="10dp"
+
+                            android:src="@drawable/basket"
+                            android:contentDescription="@string/nv_bask" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:gravity="bottom"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/tv_oldPriceTov"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="bottom"
+                            android:layout_gravity="start"
+                            android:textColor="@color/colorDarkGray_"
+                            android:text="123 EUR"/>
+
+                        <TextView
+                            android:id="@+id/tv_priceTov"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:gravity="bottom"
+                            android:text="99 EUR"
+                            android:textColor="@color/colorRed_"
+                            android:textSize="24sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

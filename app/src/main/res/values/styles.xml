@@ -48,6 +48,16 @@
         <item name="android:gravity">center</item>
         <item name="android:textAlignment">center</item>
         <item name="android:layout_gravity">center</item>
+    </style>
 
+    <style name="myStyleCounterTextView">
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingBottom">2dp</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingEnd">10dp</item>
+        <item name="android:background">@drawable/tv_count_background</item>
+        <item name="android:textColor">@color/colorGrayLight</item>
+        <item name="android:layout_gravity">end|center</item>
+        <item name="android:layout_marginEnd">20dp</item>
     </style>
 </resources>
