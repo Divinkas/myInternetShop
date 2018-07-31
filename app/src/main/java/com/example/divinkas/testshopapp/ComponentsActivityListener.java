@@ -11,9 +11,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.Gravity;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class ComponentsActivityListener implements View.OnClickListener{
 
@@ -81,13 +80,14 @@ public class ComponentsActivityListener implements View.OnClickListener{
     private void tvSetStyle(TextView tv){
         tv.setBackgroundResource(R.drawable.tv_count_background);
         tv.setTextColor(Color.WHITE);
-        ViewGroup.LayoutParams lp = new ViewGroup.LayoutParams(
-                new ViewGroup.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT,
-                        ViewGroup.LayoutParams.WRAP_CONTENT));
+        LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(
+                new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT,
+                        LinearLayout.LayoutParams.WRAP_CONTENT));
+        //lp.setMargins(10, 10, 10, 10);
+        lp.gravity = Gravity.CENTER_VERTICAL;
         tv.setLayoutParams(lp);
         tv.setGravity(Gravity.CENTER_VERTICAL);
         tv.setPadding(10, 2, 10, 2);
-
     }
     public void initToolbar(Toolbar toolbar){
         toolbar.setTitle(title_activity);

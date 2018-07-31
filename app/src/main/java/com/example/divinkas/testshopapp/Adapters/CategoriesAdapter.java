@@ -2,6 +2,7 @@ package com.example.divinkas.testshopapp.Adapters;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -13,6 +14,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.divinkas.testshopapp.Data.ListCategoryTovars;
+import com.example.divinkas.testshopapp.ListSubCategoryActivity;
 import com.example.divinkas.testshopapp.R;
 
 import java.util.List;
@@ -46,6 +48,10 @@ public class CategoriesAdapter extends RecyclerView.Adapter<CategoriesAdapter.Vi
             public void onClick(View v) {
                 String pos = "id clicked position: " + categoryTovarsList.get(position).getIdCategory();
                 Toast.makeText(context, pos, Toast.LENGTH_SHORT).show();
+
+                Intent intent = new Intent(context, ListSubCategoryActivity.class);
+                intent.putExtra("category", categoryTovarsList.get(position).getIdCategory());
+                context.startActivity(intent);
             }
         });
     }

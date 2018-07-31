@@ -9,6 +9,7 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.widget.LinearLayout;
 
+import com.example.divinkas.testshopapp.Adapters.SubCategoryAdapter;
 import com.example.divinkas.testshopapp.Adapters.TypeRegistrationsAdapter;
 import com.example.divinkas.testshopapp.DTO.Connecter;
 
@@ -21,12 +22,15 @@ public class ListSubCategoryActivity extends AppCompatActivity {
     DrawerLayout drawerLayout;
 
     RecyclerView rvListSubCategory;
+    int idCategory;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         setTheme(TYPE_THEME);
         super.onCreate(savedInstanceState);
         setContentView(LAYOUT_NAME);
+
+        idCategory = getIntent().getIntExtra("category", 0);
 
         initComponents();
     }
@@ -48,13 +52,12 @@ public class ListSubCategoryActivity extends AppCompatActivity {
     }
 
     private void initRecycler(){
-        int id = 1;
         Connecter connecter = new Connecter();
-        TypeRegistrationsAdapter categoriesAdapter =
-                new TypeRegistrationsAdapter(this, connecter.getSubCategoryList(id));
+        SubCategoryAdapter subCategoryAdapter =
+                new SubCategoryAdapter(this, connecter.getSubCategoryList(idCategory));
         LinearLayoutManager linearLayoutManager =
                 new LinearLayoutManager( this, LinearLayout.VERTICAL, false);
         rvListSubCategory.setLayoutManager(linearLayoutManager);
-        rvListSubCategory.setAdapter(categoriesAdapter);
+        rvListSubCategory.setAdapter(subCategoryAdapter);
     }
 }

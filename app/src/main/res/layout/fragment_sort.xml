@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sortLL_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textColor="@color/colorDarkGray_"
+        android:background="@color/colorGray_"
+        android:text="@string/btn_sort_text"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorDarkGray_"
+            android:buttonTint="@color/colorDarkGray_"
+            android:text="sort type 1"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorDarkGray_"
+            android:buttonTint="@color/colorDarkGray_"
+            android:text="sort type 2"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorDarkGray_"
+            android:buttonTint="@color/colorDarkGray_"
+            android:text="sort type 3"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorDarkGray_"
+            android:buttonTint="@color/colorDarkGray_"
+            android:text="sort type 4"/>
+    </RadioGroup>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnYesSort"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Применить"
+            android:textSize="18sp"
+            android:layout_margin="0dp"
+            android:padding="0dp"
+            android:textAlignment="center"/>
+        <Button
+            android:id="@+id/btnCancelSort"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Сбросить"
+            android:textSize="18sp"
+            android:layout_margin="0dp"
+            android:padding="0dp"
+            android:textAlignment="center"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/filtrLL_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textColor="@color/colorDarkGray_"
+        android:background="@color/colorGray_"
+        android:text="@string/btn_filtr_text"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="15dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Производитель"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:src="@drawable/arrow_bottom" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/cbxContainerFiltr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="category 1"
+            android:buttonTint="@color/colorDarkGray_"
+            android:textColor="@color/colorDarkGray_"/>
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="category 2"
+            android:buttonTint="@color/colorDarkGray_"
+            android:textColor="@color/colorDarkGray_"/>
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="category 3"
+            android:buttonTint="@color/colorDarkGray_"
+            android:textColor="@color/colorDarkGray_"/>
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="category 4"
+            android:buttonTint="@color/colorDarkGray_"
+            android:textColor="@color/colorDarkGray_"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="15dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Цена"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:src="@drawable/arrow_bottom" />
+    </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:min="0"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:progress="40"
+        android:thumb="@color/colorPrimary" />
+    <LinearLayout
+        android:id="@+id/cont"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="category 1"
+            android:buttonTint="@color/colorDarkGray_"
+            android:textColor="@color/colorDarkGray_"/>
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="category 2"
+            android:buttonTint="@color/colorDarkGray_"
+            android:textColor="@color/colorDarkGray_"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnYes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Применить"
+            android:textSize="18sp"
+            android:layout_margin="0dp"
+            android:padding="0dp"
+            android:textAlignment="center"/>
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Сбросить"
+            android:textSize="18sp"
+            android:layout_margin="0dp"
+            android:padding="0dp"
+            android:textAlignment="center"/>
+    </LinearLayout>
+</LinearLayout>

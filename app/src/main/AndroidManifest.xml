@@ -22,7 +22,8 @@
         <activity android:name=".RegistrationActivity" />
         <activity android:name=".CatalogTovarsActivity" />
         <activity android:name=".ListCategoryActivity" />
-        <activity android:name=".ListSubCategoryActivity"></activity>
+        <activity android:name=".ListSubCategoryActivity" />
+        <activity android:name=".TovarItemActivity"></activity>
     </application>
 
 </manifest>
